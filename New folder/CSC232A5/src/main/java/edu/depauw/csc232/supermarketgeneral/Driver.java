@@ -58,7 +58,7 @@ public class Driver {
       
    }
    */
-   public static void main(String[] args) {
+   public static void main (String[] args) {
       Inventory inventory = new Inventory();
       String username;
       String password1;
@@ -103,24 +103,24 @@ public class Driver {
       
       if(typeOfItem.equals("apples")) {
          object = new Apple();
-         Apple.displayInfo();
+         apple.displayInfo();
          c2++;//printinfo
       }
       else if(typeOfItem.equals("oranges")) {
          object = new Orange();
-         Orange.displayInfo();
+         orange.displayInfo();
        c2++;//printinfo
       }
       else if(typeOfItem.equals("shoes")) {
          object = new Shoes();
-         Shoes.displayInfo();
+         shoes.displayInfo();
        //printinfo
          c2++;
       }
       else if(typeOfItem.equals("tops"))
       {
          object = new Top();
-         Top.displayInfo();
+         top.displayInfo();
        //printinfo
          c2++;
       }
