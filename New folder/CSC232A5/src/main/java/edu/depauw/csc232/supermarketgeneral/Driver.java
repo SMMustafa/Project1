@@ -84,9 +84,9 @@ public class Driver {
       {
          counter++;
       }
-      System.out.println("Please enter a username");
+      System.out.println("Please enter your email");
       String email = sc.next();
-      System.out.println("Please enter a username");
+      System.out.println("Please enter your address");
       String address = sc.next();
       
       }
