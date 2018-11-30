@@ -1,40 +1,26 @@
 package edu.depauw.csc232.supermarketgeneral;
 
 public class Inventory {
-   public Inventory() {
-      for(int i = 0;i < 4; i++) {
-         for(int j = 0;j < 100; j++) {
-            storage[i][j]=false;
-         }
-            
+   public Inventory(SupermarketItem apples,SupermarketItem oranges,SupermarketItem tops,SupermarketItem shoes ) {
+	   
+          storage[0]=apples;
+		  storage[1]=oranges;
+		  storage[2]=tops;
+		  storage[3]=shoes;
+		       
+         }      
          
          
-      }
-         
-      
-   }
 
-   private boolean [][] storage = new boolean[4][100];
+   private SupermarketItem [] storage = new SuptermarketItem[4];
    
-   public void sold(String itemName, int numberofitems)
+   public void display(String itemName, int numberofitems)
    {
-      int j=0;
-
+      
       for(int i=0; i<numberofitems; i++)
       {
-         for(int k=0; k<100; k++ )
-         {
          
-         while(j==0)
-         {
-            int f=itemNametonumber(itemName);
-            if(storage[f][k]==true)
-            {
-               storage[f][k]=false;
-            }
-               j++;
-            }
-         }
+          System.out.println("The number of" + itemName " : "+storage[i].getnum());
       }
       
    }
@@ -73,6 +59,25 @@ public class Inventory {
          // TODO Auto-generated method stub
          return null;
       }
+      
+      public int stringitemtonum(String item) {
+    	  if(item.equals("apple"))
+    	  {
+    		  return 0;
+    	  }
+    	  if(item.equals("orange"))
+    	  {
+    		  return 1 ;
+    	  }
+    	  if(item.equals("top"))
+    	  {
+    		  return 2 ;
+    	  
+      }
+    	  if(item.equals("shoes"))
+    	  {
+    		  return 3 ;
+    	  
 }
    
    
